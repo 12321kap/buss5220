@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DecentScore Animated Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#scene-0" aria-label="DecentScore demo home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>
+            <strong>DecentScore™</strong>
+            <small>Live investor demo</small>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Demo scenes">
+          <button data-jump="0" class="active">Opening</button>
+          <button data-jump="1">Problem</button>
+          <button data-jump="2">Product</button>
+          <button data-jump="3">Upload</button>
+          <button data-jump="4">AI Scan</button>
+          <button data-jump="5">Dashboard</button>
+          <button data-jump="6">Live</button>
+          <button data-jump="7">Fix Pack</button>
+          <button data-jump="8">Impact</button>
+        </nav>
+        <div class="controls" aria-label="Presentation controls">
+          <button id="prevBtn" aria-label="Previous scene">Back</button>
+          <button id="playBtn" class="primary" aria-label="Play or pause auto demo">Auto play</button>
+          <button id="nextBtn" class="primary" aria-label="Next scene">Next</button>
+        </div>
+      </header>
+
+      <main class="stage" aria-live="polite">
+        <div class="ambient" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <section id="scene-0" class="scene active dark">
+          <div class="copy">
+            <p class="eyebrow">Speaker 1 / Opening risk</p>
+            <h1>Flexible-work risk diagnosis before policy rollout.</h1>
+            <p class="lead">A policy can look flawless at head office and still fail inside one distribution centre.</p>
+            <div class="callout-strip">
+              <span>Wage theft criminal offence since Jan 2025</span>
+              <span>Millions in company penalties</span>
+              <span>Executive exposure</span>
+            </div>
+          </div>
+          <div class="hero-device inspector-card">
+            <div class="device-head">
+              <span>Fair Work inspection signal</span>
+              <strong>Live risk route</strong>
+            </div>
+            <div class="inspection-path">
+              <div class="path-line"></div>
+              <article class="path-node ok">
+                <small>Head office</small>
+                <strong>Policy appears compliant</strong>
+              </article>
+              <article class="path-node danger">
+                <small>Distribution centre</small>
+                <strong>Every request denied for two years</strong>
+              </article>
+              <article class="path-node warn">
+                <small>Exposure</small>
+                <strong>Criminal, workforce, and reputation risk</strong>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="scene-1" class="scene light problem-scene">
+          <div class="copy wide problem-copy">
+            <p class="eyebrow">Client problem</p>
+            <h2>Flexible-work policies can look neutral while quietly creating decent-work risks.</h2>
+          </div>
+          <div class="problem-cards">
+            <article>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>Inconsistent access</h3>
+              <p>Approval can depend on which manager an employee has rather than transparent criteria.</p>
+            </article>
+            <article>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+              </div>
+              <h3>Hidden work stress</h3>
+              <p>Employees may avoid support if requests are linked to performance consequences.</p>
+            </article>
+            <article>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
+              </div>
+              <h3>Weak governance evidence</h3>
+              <p>HR teams need a clear trail showing what was flagged, fixed and reviewed.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="scene-2" class="scene light workflow-scene">
+          <div class="copy wide workflow-copy">
+            <p class="eyebrow">Product workflow</p>
+            <h2>One product story: backend analysis logic, client-facing dashboard output.</h2>
+          </div>
+          <div class="workflow-cards">
+            <article>
+              <span class="workflow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8 12 3 7 8"/><path d="M12 3v12"/></svg>
+              </span>
+              <b>01</b>
+              <h3>Upload documents</h3>
+              <p>Policy drafts, business-unit manager guides and grievance procedures are uploaded into the review workspace.</p>
+            </article>
+            <article>
+              <span class="workflow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
+              </span>
+              <b>02</b>
+              <h3>Clause-level scan</h3>
+              <p>The system breaks long HR documents into clauses so risk can be traced back to exact source wording.</p>
+            </article>
+            <article>
+              <span class="workflow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+              </span>
+              <b>03</b>
+              <h3>Risk diagnosis</h3>
+              <p>Each clause is mapped against decent-work dimensions such as flexibility, stress, conditions and job security.</p>
+            </article>
+            <article>
+              <span class="workflow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m14.7 6.3 3 3"/><path d="M19 2l3 3-11 11-4 1 1-4Z"/><path d="M5 21h14"/></svg>
+              </span>
+              <b>04</b>
+              <h3>Fix Pack</h3>
+              <p>HR receives revised wording, a manager checklist and worker-facing explanations for human review.</p>
+            </article>
+            <article>
+              <span class="workflow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <b>05</b>
+              <h3>Audit trail</h3>
+              <p>Every automated finding and human decision is retained for transparent governance and disclosure.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="scene-3" class="scene light">
+          <div class="copy">
+            <p class="eyebrow">Speaker 3 / Demo setup</p>
+            <h2>A 35,000-person retail and logistics employer uploads the rollout pack.</h2>
+            <p class="lead">The Chief People Officer wants to test the flexible-work policy before launch.</p>
+          </div>
+          <div class="upload-console">
+            <div class="file-stack">
+              <div class="file-card doc"><strong>Draft flexible-work policy</strong><span>DOCX</span></div>
+              <div class="file-card pdf"><strong>4 manager guides</strong><span>PDF</span></div>
+              <div class="file-card scan"><strong>Grievance procedure</strong><span>SCAN</span></div>
+              <div class="file-card photo"><strong>Printed workplace notice</strong><span>PHOTO</span></div>
+            </div>
+            <div class="analysis-meter">
+              <header><strong>Analysis in progress</strong><span>38 clauses found</span></header>
+              <label>Clause extraction<i style="--v:94%"></i></label>
+              <label>Risk classification<i style="--v:82%"></i></label>
+              <label>Business-unit comparison<i style="--v:68%"></i></label>
+              <label>Fix Pack draft<i style="--v:51%"></i></label>
+            </div>
+          </div>
+        </section>
+
+        <section id="scene-4" class="scene dark">
+          <div class="copy wide">
+            <p class="eyebrow">Speaker 3 / AI analysis</p>
+            <h2>The scanner highlights the exact clauses that would make the rollout messy.</h2>
+          </div>
+          <div class="scanner-layout">
+            <div class="document-panel">
+              <div class="scan-line"></div>
+              <p>Flexible work requests may be approved or rejected at the <mark class="red">manager's discretion</mark>.</p>
+              <p>Employees should ensure flexible work <mark class="amber">does not affect productivity</mark>.</p>
+              <p><mark class="red">Repeated requests</mark> may be considered during <mark class="amber">performance reviews</mark>.</p>
+            </div>
+            <aside class="finding-panel">
+              <strong>High-confidence findings</strong>
+              <article><span class="red"></span><b>Flexibility risk</b><small>Inconsistent access across business units</small></article>
+              <article><span class="amber"></span><b>Stress risk</b><small>Employees may fear career consequences</small></article>
+              <article><span class="teal"></span><b>Explainability</b><small>Every finding links to source wording</small></article>
+            </aside>
+          </div>
+        </section>
+
+        <section id="scene-5" class="scene light">
+          <div class="copy wide">
+            <p class="eyebrow">Speaker 4 / Scoring dashboard</p>
+            <h2>DecentScore reveals the gap between corporate office and logistics.</h2>
+            <p class="lead">The platform compares obligations within the company, not just against a generic policy checklist.</p>
+          </div>
+          <div class="dashboard-grid">
+            <article class="score-card strong">
+              <h3>Corporate office</h3>
+              <div class="bar"><span>Flexibility</span><i style="--v:86%"></i><b>86</b></div>
+              <div class="bar"><span>Conditions</span><i style="--v:78%"></i><b>78</b></div>
+              <div class="bar amber"><span>Stress</span><i style="--v:69%"></i><b>69</b></div>
+              <div class="bar blue"><span>Job security</span><i style="--v:74%"></i><b>74</b></div>
+            </article>
+            <article class="score-card weak">
+              <h3>Logistics division</h3>
+              <div class="bar red"><span>Flexibility</span><i style="--v:42%"></i><b>42</b></div>
+              <div class="bar amber"><span>Conditions</span><i style="--v:61%"></i><b>61</b></div>
+              <div class="bar red"><span>Stress</span><i style="--v:38%"></i><b>38</b></div>
+              <div class="bar blue"><span>Job security</span><i style="--v:68%"></i><b>68</b></div>
+            </article>
+            <aside class="clause-evidence">
+              <strong>Explainable clause evidence</strong>
+              <p>One logistics guide limits flexible work to office-based staff only, while another department allows broader access.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section id="scene-6" class="scene dark">
+          <div class="copy live-copy">
+            <p class="eyebrow">Interactive dashboard</p>
+            <h2>From risk finding to Fix Pack in one review workflow.</h2>
+            <p class="lead">DecentScore shows where obligations diverge, explains the clause evidence, and prepares review-ready fixes for HR.</p>
+            <a class="live-link" href="https://buss5220-hy8n.vercel.app/#/dashboard" target="_blank" rel="noreferrer">Open full dashboard</a>
+          </div>
+          <div class="live-browser dashboard-demo">
+            <div class="browser-chrome">
+              <span></span><span></span><span></span>
+              <strong>DecentScore / client dashboard</strong>
+              <em>local demo</em>
+            </div>
+            <div class="dash-shell">
+              <aside class="dash-sidebar">
+                <div class="dash-logo"><i></i><b>DecentScore™</b></div>
+                <button class="active">Overview</button>
+                <button>Risk Map</button>
+                <button>Clauses</button>
+                <button>Fix Pack</button>
+              </aside>
+              <div class="dash-main">
+                <div class="demo-cursor" aria-hidden="true"></div>
+                <header class="dash-head">
+                  <div>
+                    <small>Publicly listed retail + logistics client</small>
+                    <h3>Flexible-work rollout readiness</h3>
+                  </div>
+                  <strong><span class="status-word">Scanning</span></strong>
+                </header>
+                <div class="dash-kpis">
+                  <article><span>Overall risk</span><b>High</b><i class="red"></i></article>
+                  <article><span>Clauses analysed</span><b>38</b><i></i></article>
+                  <article><span>Fixes drafted</span><b>12</b><i class="amber"></i></article>
+                </div>
+                <div class="dash-grid">
+                  <section class="division-card corporate">
+                    <h4>Corporate office</h4>
+                    <label>Flexibility <i style="--v:86%"></i><b>86</b></label>
+                    <label>Conditions <i style="--v:78%"></i><b>78</b></label>
+                    <label>Stress <i style="--v:69%"></i><b>69</b></label>
+                    <label>Job security <i style="--v:74%"></i><b>74</b></label>
+                  </section>
+                  <section class="division-card logistics">
+                    <h4>Logistics division</h4>
+                    <label>Flexibility <i style="--v:42%"></i><b>42</b></label>
+                    <label>Conditions <i style="--v:61%"></i><b>61</b></label>
+                    <label>Stress <i style="--v:38%"></i><b>38</b></label>
+                    <label>Job security <i style="--v:68%"></i><b>68</b></label>
+                  </section>
+                  <section class="risk-feed">
+                    <h4>Flagged clause</h4>
+                    <p>“Flexible work requests may be approved or rejected at the <mark class="red">manager's discretion</mark>.”</p>
+                    <div class="confidence"><span>Confidence</span><i style="--v:91%"></i><b>91%</b></div>
+                    <button type="button">Generate Fix Pack</button>
+                  </section>
+                </div>
+                <div class="demo-toast">
+                  <b>Fix Pack generated</b>
+                  <span>3 rewrite options + audit trail ready for HR review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="scene-7" class="scene dark">
+          <div class="copy">
+            <p class="eyebrow">Speaker 5 / Fix Pack</p>
+            <h2>AI drafts the options. HR decides what is accepted, edited, or rejected.</h2>
+            <p class="lead">Nothing is implemented automatically. The platform creates a responsible review trail.</p>
+          </div>
+          <div class="fixpack">
+            <article class="before">
+              <small>Original clause</small>
+              <p>Flexible work requests may be approved or rejected at the manager's discretion.</p>
+            </article>
+            <article class="after">
+              <small>Worker-facing rewrite</small>
+              <p>Flexible work requests will be assessed using consistent business-wide criteria and cannot negatively affect employee performance reviews.</p>
+            </article>
+            <div class="review-stack">
+              <button>Accept</button><button>Edit</button><button>Reject</button>
+              <span>Audit trail generated</span>
+            </div>
+          </div>
+          <div class="value-line">Policy review time: approximately six weeks to under two.</div>
+        </section>
+
+        <section id="scene-8" class="scene light">
+          <div class="copy wide">
+            <p class="eyebrow">Speaker 6 / Impact and close</p>
+            <h2>Responsible AI for decent work, governance, and sustainability reporting.</h2>
+            <p class="lead">DecentScore contributes to SDG 8 Target 8.5 by helping employers identify inconsistent treatment before it becomes a legal or reputational crisis.</p>
+          </div>
+          <div class="impact-bridge">
+            <article><span></span><h3>Responsible AI</h3><p>Transparent, explainable, human-reviewed recommendations.</p></article>
+            <article><span></span><h3>Workforce governance</h3><p>Consistent criteria across stores, logistics, service and corporate functions.</p></article>
+            <article><span></span><h3>AASB S1-ready evidence</h3><p>Board-ready summaries and auditable decisions.</p></article>
+          </div>
+          <p class="closing-line">We are not replacing HR professionals. We are empowering them to make ethical, informed decisions at scale.</p>
+        </section>
+      </main>
+
+      <footer class="speaker-bar">
+        <div class="progress"><i id="progressFill"></i></div>
+        <span id="speakerLabel">Speaker 1 / Mikaila</span>
+        <span id="timerLabel">Scene 1 of 9</span>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
